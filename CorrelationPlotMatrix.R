@@ -1,3 +1,7 @@
+library(ggplot2)
+library(RColorBrewer)
+library(reshape)
+
 myPalette <- colorRampPalette(rev(brewer.pal(6, "Spectral")))
 
 dat.cor=(round(cor(dat),digits=2))
