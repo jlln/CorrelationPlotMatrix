@@ -2,10 +2,16 @@ library(ggplot2)
 library(RColorBrewer)
 library(reshape)
 
-myPalette <- colorRampPalette(rev(brewer.pal(6, "Spectral")))
 
+#Establish the palette to be used
+myPalette <- colorRampPalette(rev(brewer.pal(6, "Spectral")))    
+
+
+#Calculate the correlation between variables. If desired, alternative measures of correlation eg. Spearman's can be substituted.
 dat.cor=(round(cor(dat),digits=2))
 cor.matrix<-dat.cor
+
+
 
 cor.matrix[order(rownames(cor.matrix)),]->cor.matrix
 cols<-colnames(cor.matrix)
