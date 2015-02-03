@@ -1,7 +1,7 @@
 corMat<-function(dat){
 require(ggplot2)
 require(RColorBrewer)
-require(reshape)
+require(reshape2)
 
 
 #Establish the palette to be used
